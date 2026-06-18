@@ -58,26 +58,6 @@
         position = "600, 0";
         halign = "center";
         valign = "center";
-      } {
-        # GITHUB (left upper)
-        monitor = "";
-        text = "cmd[update:3600000] my-github-contributions";
-        font_size = 14;
-        font_family = "JetBrainsMono Nerd Font";
-
-        position = "-600, 0";
-        halign = "center";
-        valign = "center";
-      } {
-        # WAKATIME (left lower)
-        monitor = "";
-        text = "cmd[update:300000] echo \"Coded for $(wakatime-cli --today) today\"";
-        font_size = 14;
-        font_family = "JetBrainsMono Nerd Font";
-
-        position = "-600, -200";
-        halign = "center";
-        valign = "center";
       }];
     };
   };
