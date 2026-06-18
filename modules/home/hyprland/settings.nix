@@ -22,12 +22,12 @@
           natural_scroll = true;
           disable_while_typing = true;
           clickfinger_behavior = true;
-          scroll_factor = 0.5;
+          scroll_factor = 0.4;
         };
 
         follow_mouse = 1;
-        # follow_mouse = 2; # For bambu lab submenus
         accel_profile = "flat";
+        force_no_accel = true;
         sensitivity = 0.6;
       };
 
