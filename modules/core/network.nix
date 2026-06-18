@@ -15,7 +15,5 @@
       # Wake on lan
       allowedUDPPorts = lib.mkIf config.my.isHighPower [ 9 ];
     };
-    # Point to local NextDNS proxy
-    nameservers = [ "127.0.0.1" "::1" ];
   };
 }

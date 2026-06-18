@@ -52,16 +52,6 @@
       openDefaultPorts = true; # Open ports in the firewall for Syncthing. (NOTE: this will not open syncthing gui port)
     };
 
-    # NextDNS service with DoH
-    nextdns = {
-      enable = true;
-      arguments = [
-        "-config" "176a88"           # Your NextDNS config ID
-        # "-cache-size" "10MB"         # Optional: local cache
-        # "-use-hosts" "true"          # Optional: use /etc/hosts
-      ];
-    };
-
     # Server for calendar and tasks  
     radicale = {
       enable = true;

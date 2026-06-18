@@ -63,7 +63,6 @@
     wtype                                                 # Fake keyboard input (for pasting from clipboard manager)
     wakatime-cli                                          # WakaTime command line interface
     xeyes                                                 # If the eyes move the app is running on xwayland
-    texliveMedium                                         # LaTeX packages
     typst                                                 # New markup-based typesetting system that is powerful and easy to learn
     efibootmgr                                            # Linux user-space application to modify the Intel Extensible Firmware Interface (EFI) Boot Manager
                                                           # Archives / compression
@@ -71,7 +70,6 @@
     unrar                                                 # For unzipping multi-part RARs
                                                           # Desktop integration & trays
     networkmanagerapplet                                  # Tray GUI for NetworkManager
-    nextdns                                               # For toggling DoH on/off
     libnotify                                             # Notification daemon (duplicate, but needed for install script)
     wvkbd                                                 # Onscreen touch keyboard
                                                           # Misc
@@ -124,6 +122,7 @@
     libreoffice                                           # Comprehensive, professional-quality productivity suite, a variant of openoffice.org
     anki-bin                                              # Flashcards app
     moonlight-qt                                          # Remote desktop interface to go with the sunshine service
+    shtris                                                # Terminal based tetris
 
   ]) ++ (if isHighPower then (with pkgs-stable; [ # Host-specific additions
     ddcutil                                               # Desktop brighness controller

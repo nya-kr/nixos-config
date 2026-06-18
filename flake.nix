@@ -26,11 +26,6 @@
       inputs.elephant.follows = "elephant";
     };
 
-    sops-nix = {
-      url = "github:Mic92/sops-nix";
-      inputs.nixpkgs.follows = "nixpkgs-stable";
-    };
-
     home-manager = {
       url = "github:nix-community/home-manager";
       inputs.nixpkgs.follows = "nixpkgs-unstable";
@@ -71,7 +66,7 @@
 
   outputs = { self, nixpkgs-unstable, nixpkgs-stable, ... } @ inputs:
   let
-    username = "adam";
+    username = "nya";
     system = "x86_64-linux";
     pkgs-unstable = import nixpkgs-unstable {
       inherit system;
@@ -120,36 +115,20 @@
           inherit self inputs username pkgs-stable pkgs-unstable;
         };
       };
-      laptop = nixpkgs-unstable.lib.nixosSystem {
-        inherit system;
-        modules = [
-          ./hosts/laptop
-          inputs.grub2-themes.nixosModules.default
-          inputs.stylix.nixosModules.stylix
-          inputs.nix-index-database.nixosModules.default
-          inputs.nur.modules.nixos.default
-          inputs.chaotic.nixosModules.default
-          inputs.nixos-hardware.nixosModules.microsoft-surface-pro-intel
-        ];
-        specialArgs = {
-          host = "laptop";
-          inherit self inputs username pkgs-stable pkgs-unstable;
-        };
-      };
-      laptop-2 = nixpkgs-unstable.lib.nixosSystem {
-      	inherit system;
-        modules = [
-          ./hosts/laptop-2
-          inputs.grub2-themes.nixosModules.default
-          inputs.stylix.nixosModules.stylix
-          inputs.nix-index-database.nixosModules.default
-          inputs.nur.modules.nixos.default
-          inputs.chaotic.nixosModules.default
-        ];
-        specialArgs = {
-          host = "laptop-2";
-          inherit self inputs username pkgs-stable pkgs-unstable;
-        };
+      laptop-1 = nixpkgs-unstable.lib.nixosSystem {        
+              inherit system;        
+        modules = [        
+          ./hosts/laptop-1        
+          inputs.grub2-themes.nixosModules.default        
+          inputs.stylix.nixosModules.stylix        
+          inputs.nix-index-database.nixosModules.default        
+          inputs.nur.modules.nixos.default        
+          inputs.chaotic.nixosModules.default        
+        ];        
+        specialArgs = {        
+          host = "laptop-1";        
+          inherit self inputs username pkgs-stable pkgs-unstable;        
+        };        
       };
     };
   };

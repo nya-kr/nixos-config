@@ -5,8 +5,8 @@
       
       settings = {
         user = {
-          name  = "sonicpanther101";
-          email = "sonicpanther101@gmail.com";
+          name  = "nya-kr";
+          email = "nya@florax.co.nz";
         };
 
         init.defaultBranch = "main";

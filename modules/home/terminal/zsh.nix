@@ -1,6 +1,6 @@
 { isDualBoot, lib, host, ...}: 
 let
-  dualBootId = "0004";
+  dualBootId = "";
 in {                              
   programs.zsh = {                                                         
     enable = true; 
