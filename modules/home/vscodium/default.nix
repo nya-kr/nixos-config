@@ -26,7 +26,6 @@
         "explorer.confirmDelete" = false;
         "explorer.confirmDragAndDrop" = false;
         "terminal.integrated.tabs.enabled" = false;
-        "editor.lineNumbers" = "relative";
         "editor.fontLigatures" = true;
         "terminal.integrated.initialHint" = false;
         "terminal.integrated.enableMultiLinePasteWarning" = "never";

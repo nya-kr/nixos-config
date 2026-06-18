@@ -3,7 +3,6 @@
     hostName = host;
     networkmanager = {
       enable = true;
-      dns = "none"; # Prevent NetworkManager from overriding DNS
     };
     # Wake on lan
     interfaces.enp6s0.wakeOnLan.enable = config.my.isHighPower;
