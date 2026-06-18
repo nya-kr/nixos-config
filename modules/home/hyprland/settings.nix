@@ -27,8 +27,7 @@
 
         follow_mouse = 1;
         accel_profile = "flat";
-        force_no_accel = true;
-        sensitivity = 0.6;
+        sensitivity = 0.5;
       };
 
       cursor.no_warps = true;
