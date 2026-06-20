@@ -21,9 +21,9 @@
       "wl-paste --type text --watch cliphist store"
       "wl-paste --type image --watch cliphist store"
       # "wl-copy" # Might clear the clipboard history on boot
+      "my-rwall -n nixos.png"
       "cd ~/nixos-config && git fetch"
     ] ++ lib.optionals isHighPower [
-      "my-rwall -n nixos.png"
       "openrgb --startminimized -b 0 -m direct"
       "sunshine"
 

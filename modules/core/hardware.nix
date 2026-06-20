@@ -14,7 +14,7 @@
           libvdpau-va-gl
           nvidia-vaapi-driver
         ]
-      ) ++ (with pkgs-unstable; lib.optionals (host == "laptop") [
+      ) ++ (with pkgs-unstable; lib.optionals (host == "laptop-1") [
         intel-media-driver # LIBVA_DRIVER_NAME=iHD
         libvdpau-va-gl
         intel-vaapi-driver # LIBVA_DRIVER_NAME=i965 (older but sometimes more stable)
@@ -75,8 +75,11 @@
 
     # XBox controller
     xpadneo.enable = true;
-  }) (if (host == "laptop") then {
-    microsoft-surface.kernelVersion = "stable";
+  }) (if (host == "laptop-1") then {
+    microsoft-surface = {
+      kernelVersion = "stable";
+      # ipts.enable = true;
+    };
   } else {})];
 
   environment = {
@@ -86,7 +89,7 @@
       WLR_NO_HARDWARE_CURSORS = "1";
       # Hint electron apps to use wayland
       NIXOS_OZONE_WL = "1";
-    } // lib.optionalAttrs (host == "laptop") {
+    } // lib.optionalAttrs (host == "laptop-1") {
       # Intel-specific environment variables
       LIBVA_DRIVER_NAME = "iHD"; # or "i965" if iHD doesn't work
     };

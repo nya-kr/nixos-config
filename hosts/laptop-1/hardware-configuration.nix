@@ -26,10 +26,10 @@
 
   swapDevices = [{
     device = "/swapfile";
-    size = 16 * 1024; # GB
+    size = 16 * 1024; # 16GB
   }];
 
-  boot.kernelParams = [ "mem_sleep_default=deep" "resume_offset=5931008" ];
+  boot.kernelParams = [ "resume_offset=5931008" ];
 
   boot.resumeDevice = "/dev/disk/by-uuid/bf2ec94f-e93e-4847-a6bb-1ecf64156651";
 

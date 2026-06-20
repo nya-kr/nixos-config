@@ -10,7 +10,7 @@
     plugins = [
       inputs.split-monitor-workspaces.packages.${pkgs-stable.stdenv.hostPlatform.system}.split-monitor-workspaces
     ] ++ lib.optionals isLaptop [
-      inputs.hyprgrass.packages.${pkgs-stable.system}.default
+      inputs.hyprgrass.packages.${pkgs-stable.stdenv.hostPlatform.system}.default
     ];
 
     extraConfig = ''
@@ -83,8 +83,8 @@
     '');
 
     # set the flake package
-    package = pkgs-unstable.hyprland;
+    package = inputs.hyprland.packages.${pkgs-stable.stdenv.hostPlatform.system}.hyprland;
     # make sure to also set the portal package, so that they are in sync
-    portalPackage = pkgs-unstable.xdg-desktop-portal-hyprland;
+    portalPackage = inputs.hyprland.packages.${pkgs-stable.stdenv.hostPlatform.system}.xdg-desktop-portal-hyprland;
   };
 }

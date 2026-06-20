@@ -4,7 +4,6 @@
     ./syncthing.nix
     ./packages.nix
     ./hyprland
-    ./neovim
     ./terminal
     ./scripts
     ./style.nix

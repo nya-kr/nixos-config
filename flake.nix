@@ -123,7 +123,8 @@
           inputs.stylix.nixosModules.stylix        
           inputs.nix-index-database.nixosModules.default        
           inputs.nur.modules.nixos.default        
-          inputs.chaotic.nixosModules.default        
+          inputs.chaotic.nixosModules.default    
+          inputs.nixos-hardware.nixosModules.microsoft-surface-common    
         ];        
         specialArgs = {        
           host = "laptop-1";        

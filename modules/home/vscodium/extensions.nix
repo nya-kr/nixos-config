@@ -89,10 +89,6 @@ in {
       publisher = "esbenp"; name = "prettier-vscode"; version = "12.4.0";
       sha256 = "sha256-+3MOpDBtCc3Ao6qp6bquKAWMyXpPv86LBWs3egY5qf4=";
     })
-    (openVsxExtension {
-      publisher = "asvetliakov"; name = "vscode-neovim"; version = "1.19.0";
-      sha256 = "sha256-DWK7daxHjHOKY7HHCeI89eWTYaIPB2LQ/C1VdnyIqu8=";
-    })
   ];
 
   home.activation.catppuccinVsc = lib.hm.dag.entryAfter ["writeBoundary"] ''

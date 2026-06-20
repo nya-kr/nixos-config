@@ -37,9 +37,6 @@
         "nix.serverPath" = "nixd";
         "extensions.autoUpdate" = false;
         "extensions.autoCheckUpdates" = false;
-        "extensions.experimental.affinity" = {
-          "asvetliakov.vscode-neovim" = 1;
-        };
         "clangd.path" = "/home/${username}/.config/VSCodium/User/globalStorage/llvm-vs-code-extensions.vscode-clangd/install/21.1.0/clangd_21.1.0/bin/clangd";
       };
       force = true;
