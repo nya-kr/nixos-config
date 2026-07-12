@@ -197,6 +197,7 @@
           format = "{percent}% {icon}";
           format-icons = [ "" "" "" "" "" "" "" "" "" ];
           tooltip = false;
+          reverse-scrolling = true;
         };
         
         idle_inhibitor = {
