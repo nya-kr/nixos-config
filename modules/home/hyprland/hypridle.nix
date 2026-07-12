@@ -5,7 +5,7 @@
     settings = {
       listener = [
         {
-          timeout = 60;
+          timeout = 180;
           on-timeout = lib.mkIf (host != "laptop-2") "hyprctl dispatch dpms off";
 
           on-resume = lib.mkIf (host != "laptop-2") "hyprctl dispatch dpms on";
