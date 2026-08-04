@@ -7,10 +7,14 @@
 
     # Getting sleep to work
     logind.settings.Login = {
-      HandleLidSwitch = "suspend-then-hibernate";
+      HandleLidSwitch = "ignore";
+      HandleSuspendKey = "ignore";
       HandlePowerKey = "ignore";
       HandlePowerKeyLongPress = "poweroff";
     };
+
+    # keep logs after reboot
+    journald.storage = "persistent";
 
     greetd = {
       enable = true;
