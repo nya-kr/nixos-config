@@ -172,6 +172,16 @@
       };
     };
   });
+
+  systemd.services.reset-hypridle-on-resume = {
+    description = "Restart hypridle after resume to reset idle timers";
+    wantedBy = [ "post-resume.target" "post-hibernate.target" ];
+    after = [ "post-resume.target" "post-hibernate.target" ];
+    serviceConfig = {
+      Type = "oneshot";
+      ExecStart = "${pkgs-stable.util-linux}/bin/runuser -u nya -- systemctl --user restart hypridle.service";
+    };
+  };
   
   systemd.tmpfiles.rules = [
     "d /var/lib/radicale 0750 radicale radicale -"

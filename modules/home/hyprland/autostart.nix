@@ -11,7 +11,6 @@
 
       # Set startup apps
       "pidof hyprlock || hyprlock"
-      "hyprsunset"
       "sleep 1 && waybar"
       "nm-applet"
       "blueman-applet"

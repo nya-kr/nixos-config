@@ -28,27 +28,9 @@
         else
           "/home/${username}";
       in {
-        "Kobo" = {
-          id = "m7cg8-2a7jo";
-          path = "${basePath}/Kobo/";
-          devices = sharedDevices;
-        };
-
-        "Guitar" = {
-          id = "zevcu-jzwwx";
-          path = "${basePath}/Guitar/";
-          devices = sharedDevices;
-        };
-
         "Music" = {
           id = "csoaz-zgdyy";
           path = "${basePath}/Music/";
-          devices = sharedDevices;
-        };
-
-        "Research Papers" = {
-          id = "p2539-fht3j";
-          path = "${basePath}/Research Papers/";
           devices = sharedDevices;
         };
 
