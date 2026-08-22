@@ -130,7 +130,7 @@
           host = "laptop-1";        
           inherit self inputs username pkgs-stable pkgs-unstable;        
         };        
-      };
+      };        
     };
   };
 }
