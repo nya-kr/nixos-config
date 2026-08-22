@@ -116,16 +116,16 @@
 
       # workspace = if (host != host) then [
       workspace = lib.mkIf (host == "desktop") [
-        "1,monitor:HDMI-A-1"
-        "2,monitor:HDMI-A-1"
-        "3,monitor:HDMI-A-1"
-        "4,monitor:HDMI-A-1"
-        "5,monitor:HDMI-A-1"
-        "6,monitor:HDMI-A-1"
-        "7,monitor:HDMI-A-1"
-        "8,monitor:HDMI-A-1"
-        "9,monitor:HDMI-A-1"
-        "10,monitor:HDMI-A-1"
+        "1,monitor:DP-2"
+        "2,monitor:DP-2"
+        "3,monitor:DP-2"
+        "4,monitor:DP-2"
+        "5,monitor:DP-2"
+        "6,monitor:DP-2"
+        "7,monitor:DP-2"
+        "8,monitor:DP-2"
+        "9,monitor:DP-2"
+        "10,monitor:DP-2"
 
         "11,monitor:DP-1"
         "12,monitor:DP-1"
