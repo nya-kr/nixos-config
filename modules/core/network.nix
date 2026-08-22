@@ -6,7 +6,6 @@
     };
     # Wake on lan
     interfaces.enp6s0.wakeOnLan.enable = config.my.isHighPower;
-    # port 8384 is the default port to allow syncthing GUI access from the network.
     firewall = {
       enable = true;
       # Calendar server

@@ -18,7 +18,6 @@ in {
     "my-budgeting"
     "my-mpris-waybar"
     "maxfetch"
-    "my-syncthing-usb"
     "my-date-formatter"
     "my-promodoro"
     "my-weather"

@@ -16,7 +16,7 @@
     extraConfig = ''
       plugin {
         split-monitor-workspaces {
-          monitor_priority = DP-1, HDMI-A-1, DP-2, eDP-1, Virtual-1
+          monitor_priority = DP-2, DP-1, eDP-1, Virtual-1
           max_workspaces = DP-1, 10
           max_workspaces = DP-2, 10
           max_workspaces = HDMI-A-1, 10

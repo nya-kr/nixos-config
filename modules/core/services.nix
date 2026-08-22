@@ -51,11 +51,6 @@
       settings.PubkeyAuthentication = true;
     };
 
-    # Syncthing
-    syncthing = {
-      openDefaultPorts = true; # Open ports in the firewall for Syncthing. (NOTE: this will not open syncthing gui port)
-    };
-
     # Server for calendar and tasks  
     radicale = {
       enable = true;

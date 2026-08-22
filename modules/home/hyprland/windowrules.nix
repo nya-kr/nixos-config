@@ -61,7 +61,6 @@ in {
       # Stops screen sleep on idle
       "match:class mpv, idle_inhibit focus"
       "match:class vlc, idle_inhibit focus"
-      "match:title .*Syncthing.*, idle_inhibit focus"
       "match:title .*LEARN.*, idle_inhibit focus"
       "match:title .*Tutorial.*, idle_inhibit focus"
       "match:title .*Lab Report.*, idle_inhibit focus"

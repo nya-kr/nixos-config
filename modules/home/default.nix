@@ -1,7 +1,6 @@
 { ... } : {
   imports = [
     ./programs.nix
-    ./syncthing.nix
     ./packages.nix
     ./hyprland
     ./terminal
