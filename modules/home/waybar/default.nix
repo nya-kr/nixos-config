@@ -49,8 +49,8 @@
           };
           # persistent-workspaces = if (host != host) then {
           persistent-workspaces = {
-            "DP-1" = [ 11 12 13 14 15 ];
-            "DP-2" = [ 1 2 3 4 5 ];
+            "DP-2" = [ 11 12 13 14 15 ];
+            "DP-1" = [ 1 2 3 4 5 ];
             "eDP-1" = [ 21 22 23 24 25 ];
           };
           active-only = true;
