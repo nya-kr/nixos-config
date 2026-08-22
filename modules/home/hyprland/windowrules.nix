@@ -74,7 +74,6 @@ in {
     layerrule = [
       "above_lock 2, match:namespace wvkbd"
       "above_lock 2, match:namespace waybar"
-      "above_lock 2, match:namespace sunshine"
     ];
  };
 }

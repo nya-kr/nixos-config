@@ -121,7 +121,6 @@
     nixd                                                  # Feature-rich Nix language server interoperating with C++ nix
     libreoffice                                           # Comprehensive, professional-quality productivity suite, a variant of openoffice.org
     anki-bin                                              # Flashcards app
-    moonlight-qt                                          # Remote desktop interface to go with the sunshine service
     shtris                                                # Terminal based tetris
 
   ]) ++ (if isHighPower then (with pkgs-stable; [ # Host-specific additions

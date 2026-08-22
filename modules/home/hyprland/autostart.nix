@@ -24,7 +24,6 @@
       "cd ~/nixos-config && git fetch"
     ] ++ lib.optionals isHighPower [
       "openrgb --startminimized -b 0 -m direct"
-      "sunshine"
 
       # Opening programs by default (not needed, just nice)
       # Main Monitor
